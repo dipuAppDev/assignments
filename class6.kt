@@ -35,6 +35,7 @@ fun main(args:Array<String>) {
      * Program -2: Leap Year program
      */
     val sc = Scanner(System.`in`)
+    println("Enter a year: ")
     val year:Int = sc.nextInt()
     if((year%4==0)&&(year%100!=0)||(year%400==0)){
         println("$year is a Leap Year.")
