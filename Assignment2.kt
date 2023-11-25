@@ -1,4 +1,9 @@
 import java.util.Scanner
+
+/**
+ * Leap Year program using for loop,range and step
+ */
+
 fun main(args:Array<String>){
 
     var sc = Scanner(System.`in`)
