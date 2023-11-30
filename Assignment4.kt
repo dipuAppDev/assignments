@@ -1,3 +1,6 @@
+/**
+ * Pattern program
+ */
 fun main(args:Array<String>){
     pattern90Deg()
     println()
