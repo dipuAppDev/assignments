@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/callingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calling Via SIM 1"
+        app:layout_constraintTop_toBottomOf="@id/profileImg"
+        app:layout_constraintStart_toStartOf="@id/profileImg"
+        app:layout_constraintEnd_toEndOf="@id/profileImg"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="Md. Rakibul Islam Dipu"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/callingTV"
+        app:layout_constraintStart_toStartOf="@id/callingTV"
+        app:layout_constraintEnd_toEndOf="@id/callingTV"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile"
+        android:text="Mobile : 019********"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:id="@+id/contactsImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_contact"
+        app:layout_constraintTop_toBottomOf="@id/mobile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/contactTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        app:layout_constraintTop_toBottomOf="@id/contactsImg"
+        app:layout_constraintStart_toStartOf="@id/contactsImg"
+        app:layout_constraintEnd_toEndOf="@id/contactsImg"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/holdImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_hold"
+        app:layout_constraintTop_toBottomOf="@id/mobile"
+        app:layout_constraintStart_toStartOf="@id/mobile"
+        app:layout_constraintEnd_toEndOf="@id/mobile"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:id="@+id/holdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+        app:layout_constraintTop_toBottomOf="@id/holdImg"
+        app:layout_constraintStart_toStartOf="@id/holdImg"
+        app:layout_constraintEnd_toEndOf="@id/holdImg"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/speakerImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_speaker"
+        app:layout_constraintTop_toBottomOf="@id/mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"/>
+    <TextView
+        android:id="@+id/speakerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speaker"
+        app:layout_constraintTop_toBottomOf="@id/speakerImg"
+        app:layout_constraintStart_toStartOf="@id/speakerImg"
+        app:layout_constraintEnd_toEndOf="@id/speakerImg"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/muteImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_mute"
+        app:layout_constraintTop_toBottomOf="@id/contactTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/muteTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        app:layout_constraintTop_toBottomOf="@id/muteImg"
+        app:layout_constraintStart_toStartOf="@id/muteImg"
+        app:layout_constraintEnd_toEndOf="@id/muteImg"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/recordVoiceImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_record_voice"
+        app:layout_constraintTop_toBottomOf="@id/holdTV"
+        app:layout_constraintStart_toStartOf="@id/holdTV"
+        app:layout_constraintEnd_toEndOf="@id/holdTV"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:id="@+id/recordVoiceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record Voice"
+        app:layout_constraintTop_toBottomOf="@id/recordVoiceImg"
+        app:layout_constraintStart_toStartOf="@id/recordVoiceImg"
+        app:layout_constraintEnd_toEndOf="@id/recordVoiceImg"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/dialpadImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_dial_pad"
+        app:layout_constraintTop_toBottomOf="@id/speakerTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"/>
+    <TextView
+        android:id="@+id/dialpadTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dial pad"
+        app:layout_constraintTop_toBottomOf="@id/dialpadImg"
+        app:layout_constraintStart_toStartOf="@id/dialpadImg"
+        app:layout_constraintEnd_toEndOf="@id/dialpadImg"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_call"
+        app:tint="#03A9F4"
+        app:layout_constraintTop_toBottomOf="@id/recordVoiceTV"
+        app:layout_constraintStart_toStartOf="@id/recordVoiceTV"
+        app:layout_constraintEnd_toEndOf="@id/recordVoiceTV"
+        android:layout_marginTop="60dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
